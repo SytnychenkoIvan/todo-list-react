@@ -1,0 +1,58 @@
+.task {
+	position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 10px;
+  padding: 15px;
+
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  &__text {
+    flex: 1;
+  }
+
+  &__button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &__complete {
+    background: #4caf50;
+    color: white;
+  }
+
+  &__delete {
+    background: #f44336;
+    color: white;
+  }
+}
+
+.task {
+  // ...
+
+  &--completed {
+    background: #e8f5e9;
+
+    .task__text {
+      text-decoration: line-through;
+      color: #777;
+    }
+  }
+}
+
+
+.task--drop-target {
+  border-top: 3px solid #646cff;
+}
+
+
+.task__error {
+	color: #f44336;
+	font-size: 14px;
+}

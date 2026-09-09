@@ -1,0 +1,121 @@
+.app {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+
+  font-family: Arial, sans-serif;
+
+  h1 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+
+  input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background: #646cff;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      background: #535bf2;
+    }
+  }
+}
+
+.tasks {
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.search {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+
+  font-size: 16px;
+
+  &:focus {
+    outline: none;
+    border-color: #646cff;
+  }
+}
+
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+
+  button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #e0e0e0;
+    color: #333;
+    cursor: pointer;
+
+    &:hover {
+      background: #d0d0d0;
+      color: #646cff;
+    }
+  }
+
+  .filter--active {
+    background: #646cff;
+    color: white;
+  }
+}
+
+
+.task-stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  color: #555;
+}
+
+
+.delete-completed {
+  display: block;
+  margin: 15px auto 0;
+  padding: 8px 16px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #f44336;
+  color: white;
+
+  cursor: pointer;
+
+  &:hover {
+    background: #d32f2f;
+  }
+}
